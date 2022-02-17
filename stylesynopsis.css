@@ -1,0 +1,54 @@
+#main-synopsis { /*styling the synopsis text in a block with left alignment*/
+  display: inline-block;
+  text-align: left;
+}
+
+.main-synopsis-title { /*placing the synopsis title in the center and using a different color*/
+  text-align: center;
+  color: #FFBA45;
+}
+
+#main-synopsis-text { /*styling the text*/
+  display: inline-block;
+  margin-top: 80px; /*placing the text block in the center of the page*/
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 70px;
+  background-color: rgba(66, 58, 62, 0.9); /*setting a semi-transparent background for text*/
+  color: white;
+  padding: 15px;
+}
+
+.name { /*using a different color for filmmakers' names*/
+  color: #FFBA45;
+}
+
+#Aigerim { /*styling the filmmakers' bios*/
+  display: flex; /*using flexbox to have the photo and text side-by-side*/
+  margin-top: 0;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 40px;
+  background-color: rgba(66, 58, 62, 0.9); /*setting a semi-transparent background for text*/
+  color: white;
+  padding: 15px;
+}
+
+#Aruzhan { /*styling the filmmakers' bios*/
+  display: flex; /*using flexbox to have the photo and text side-by-side*/
+  margin-top: 0;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 90px;
+  background-color: rgba(66, 58, 62, 0.9); /*setting a semi-transparent background for text*/
+  color: white;
+  padding: 15px;
+}
+
+#main-synopsis img { /*setting a specific width to control for size of images*/
+  width: 200px;
+}
+
+.desc { /*adding some padding to bio text to have some space between image and text*/
+  padding: 10px;
+}

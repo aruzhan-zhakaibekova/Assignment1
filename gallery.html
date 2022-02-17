@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> New Dhabi/Abu York | Official Website | 30MFF </title>
+    <link rel="stylesheet" href="style.css"> <!--linking the general style sheet-->
+    <link rel="stylesheet" href="stylegallery.css"> <!--linking the page-specific style sheet-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--a library for social media icons (Font Awesome)-->
+    <script src="script.js" defer> </script> <!--linking the JavaScript file-->
+  </head>
+
+  <body>
+<div class="wrapper">
+<div class="container">
+
+
+        <div id="header">
+             <div id="navbar">  <!--a div for top navbar that will contain the menu and social media icons-->
+               <a href="index.html"> Home </a> <!--linking the other pages of the website-->
+               <a href="synopsis.html"> Synopsis </a>
+               <a class="active" href="gallery.html"> Gallery </a> <!--designating the active page to use a different color for it in css-->
+               <a href="reviews.html"> Reviews </a>
+
+               <div id="navbar-social"> <!--the part of the navbar with social media icons-->
+               <a href="https://twitter.com" class="fa fa-twitter"></a> <!--linking social media websites-->
+               <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+               <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+               </div>
+             </div>
+        </div>
+
+
+    <div class="container-gallery"> <!--the content of the carousel goes here-->
+          <div class="slides"> <!--a div for each slide: its number/order, the image, title-->
+            <div class="numbertext">1 / 4</div>
+            <img src="poster.png" style="width:50%;height:80%">
+            <div class="slides-text">  </div>
+          </div>
+
+          <div class="slides"> <!--a div for each slide: its number/order, the image, title-->
+            <div class="numbertext">2 / 4</div>
+            <img src="image1.png" style="width:50%;height:80%">
+            <div class="slides-text"> Scene 1 </div>
+          </div>
+
+          <div class="slides"> <!--a div for each slide: its number/order, the image, title-->
+            <div class="numbertext">3 / 4</div>
+            <img src="image2.png" style="width:80%;height:80%">
+            <div class="slides-text"> Scene 2 </div>
+          </div>
+
+          <div class="slides"> <!--a div for each slide: its number/order, the image, title-->
+            <div class="numbertext">4 / 4</div>
+            <img src="image3.png" style="width:50%;height:80%">
+            <div class="slides-text"> Scene 3 </div>
+          </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <!-- "forward/backward" icons that will be used to interact with the carousel-->
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <div style="text-align:center"> <!--creating dots on top of the carousel for user navigation-->
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+</div>
+            <div id="footer"> <!--the contents of the footer-->
+            <p> NYUAD Films: An independent filmmaking studio </p>
+            <p> #NewDhabiAbuYork </p>
+            <p> All rights reserved 2022 </p>
+            </div>
+    </div>
+  </body>
+</html>

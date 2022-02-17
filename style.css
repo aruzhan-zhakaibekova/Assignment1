@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap'); /*importing font*/
+
+html {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  background-image: url("/Users/zhakaibekova/Desktop/CommLab Assignment/Assignment1/background.png"); /*uploading background image*/
+  min-width: 100%;
+  background-size: contain; /*styling the background image to cover the whole window*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; /*styling the background image to be non-scrollable*/
+}
+
+body, html { /*the top navbar should have no gaps within the window*/
+ margin: 0;
+ height: 100%;
+}
+
+body { /*centering some contet (gallery)*/
+  text-align: center;
+}
+
+#navbar { /*styling the navbar*/
+  background-color: #28262e;
+  overflow: hidden; /*no overflow to prevent navbar content from "spilling" from navbar*/
+}
+
+#navbar a { /*the links to other pages should be on the left and readable*/
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover{ /*changing the color of the links to other pages on mouse hover*/
+  background-color: #FFBA45;
+  color: black;
+}
+
+#navbar a.active { /*highlighting the active page in a different color*/
+  background-color: white;
+  color: black;
+}
+
+.fa { /*styling the social media icons*/
+  padding: 0;
+  font-size: 40px;
+  width: 30px;
+  height: auto;
+  text-align: left;
+  text-decoration: none;
+}
+
+#navbar-social { /*placing social media icons on the right of the navbar*/
+  float: right;
+}
+
+.fa:hover { /*some hover effect for social media icons*/
+  opacity: 0.7;
+}
+
+
+.fa-facebook {
+  background: #3B5998; /*setting a specific color for each social media logo*/
+  color: white;
+
+}
+
+
+.fa-twitter {
+  background: #55ACEE; /*setting a specific color for each social media logo*/
+  color: white;
+}
+
+.fa-instagram {
+  background: #cd486b; /*setting a specific color for each social media logo*/
+  color: white;
+}
+
+
+#video { /*placing the video in the center of the page*/
+  padding-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+
+#video iframe { /*making the frame of the Youtube video bigger than the standard size*/
+  margin-top: 50px;
+  height: 600px;
+  width: 1060px;
+  margin-bottom: 30px;
+}
+
+#footer {
+  position: fixed; /*fixing the footer to the bottom of the page*/
+  bottom: 0;
+  width: 100%;
+  background-color: #28262e;
+  color: white;
+  text-align: left;
+  display: flex; /*justifying the content so that there is text on the right, on the left, and in the center of the footer*/
+  justify-content: space-between;
+}

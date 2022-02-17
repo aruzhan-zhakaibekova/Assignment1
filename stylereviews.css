@@ -1,0 +1,25 @@
+#main-rev { /*styling the text of reviews*/
+  display: inline-block;
+  text-align: left;
+  margin-top: 150px; /*placing the text block in the center of the page*/
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 100px;
+  background-color: rgba(66, 58, 62, 0.9); /*setting a semi-transparent background for text*/
+  color: white;
+  padding: 15px;
+}
+
+.rev {
+  display: flex; /*using flexbox to have the logo side-by-side with text*/
+}
+
+.rev img { /*adding some space between logo and text*/
+  margin-top: 17px;
+  padding: 10px;
+  position: left;
+}
+
+.rev:hover { /*changing the color of the text when mouse hovers*/
+  color: #FFBA45;
+}

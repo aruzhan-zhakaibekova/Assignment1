@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+}
+
+.slides{
+  display: none;
+}
+
+img { /*alignign the images on the center of the page*/
+  vertical-align: middle;
+}
+
+.container-gallery {
+  max-width: 1000px;
+  position: absolute;
+  margin: auto;
+  transform: translate(-50%,-50%);
+  left: 50%; /*placing the carousel in the center*/
+  top: 50%;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3); /*creating a box with semi-transparent background around the image*/
+}
+
+.prev,
+.next { /*style the arrows that indicate forward/backward navigation of the carousel*/
+  cursor: pointer;
+  position: absolute;
+  top: 50%; /*placing them on the center line of the image*/
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease; /*allowing for smooth transition of the arrows*/
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev { /*placing the backward arrow onto the left side of image*/
+  left: 0;
+}
+
+.next { /*placing the forward arrow onto the right side of image*/
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, /*adding background color when user hovers over arrows*/
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slides-text { /*styling the captions of slides*/
+  color: #ffffff;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext { /*styling the text that indicates number/order of the slide*/
+  color: #ffffff;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute; /*position it on the top left corner of image*/
+  top: 0;
+}
+
+.dot { /*style the dots on top of the carousel that aid user navigation of it*/
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 30px 2px;
+  background-color: #999999;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease; /*smooothly changing the background color when slides change*/
+}
+
+.active, /*changing background color depending on user interaction*/
+.dot:hover {
+   background-color: #111111;
+}
+
+.fade { /*faint animation*/
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.4s;
+  animation-name: fade;
+  animation-duration: 1.4s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+
+@media only screen and (max-width: 300px) { /*decrease the size of text and arrows on smaller screens*/
+.prev,
+.next,
+.text {
+font-size: 11px
+}
+}
