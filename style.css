@@ -3,7 +3,7 @@
 html {
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
-  background-image: url("/Users/zhakaibekova/Desktop/CommLab Assignment/Assignment1/background.png"); /*uploading background image*/
+  background-image: url("background.png"); /*uploading background image*/
   min-width: 100%;
   background-size: contain; /*styling the background image to cover the whole window*/
   background-repeat: no-repeat;
